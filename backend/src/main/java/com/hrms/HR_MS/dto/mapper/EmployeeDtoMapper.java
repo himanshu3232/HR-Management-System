@@ -6,7 +6,13 @@ import com.hrms.HR_MS.entity.Employee;
 public class EmployeeDtoMapper {
 
     public static EmployeeDto employeeDtoMapper(Employee employee){
-        return new EmployeeDto(employee.getId(), employee.getName(), employee.getContact(), employee.getRole(), employee.getSalary());
+        return new EmployeeDto(
+                employee.getId(),
+                employee.getName(),
+                employee.getContact(),
+                employee.getRole(),
+                employee.getSalary(),
+                employee.getPerformance()
+        );
     }
-
 }

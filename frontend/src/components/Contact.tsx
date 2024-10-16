@@ -1,10 +1,18 @@
+import { useState } from "react";
+
 export default function Contact() {
+  const [submitted, setSubmitted] = useState(false);
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    setSubmitted(!submitted);
+  };
+
   return (
     <>
       <main>
         <section id="contact">
           <h2>Contact Us</h2>
-          <form id="contactForm">
+          <form id="contactForm" onSubmit={handleSubmit}>
             <input
               type="text"
               name="name"
@@ -27,6 +35,7 @@ export default function Contact() {
             />
             <button type="submit">Send Message</button>
           </form>
+          {submitted && <p>Thank you for contacting us!</p>}
         </section>
       </main>
     </>

@@ -9,8 +9,8 @@ export default function NavBar() {
         <nav>
           <ul className="links">
             <li>
-              <Link className="link" to="/features">
-                Explore Features
+              <Link className="link" to="/list-all-employees">
+                All Employees
               </Link>
             </li>
             <li>
