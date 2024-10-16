@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HR Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Explore Features</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="employee-management.html">Employee Management</a></li>
+                <li><a href="attendance-tracking.html">Attendance Tracking</a></li>
+                <li><a href="payroll-processing.html">Payroll Processing</a></li>
+                <li><a href="leave-management.html">Leave Management</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="performance-management">
+            <h2>Performance Management</h2>
+            <form id="performanceForm">
+                <input type="number" name="employee_id" placeholder="Employee ID" required aria-label="Employee ID">
+                <input type="text" name="goal" placeholder="Performance Goal" required aria-label="Performance Goal">
+                <textarea name="comments" placeholder="Comments" aria-label="Comments"></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+            <div id="performanceList" class="performance-summary"></div>
+        </section>
+    </main>
+</body>
+</html>

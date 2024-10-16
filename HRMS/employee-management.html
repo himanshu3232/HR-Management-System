@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HR Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Explore Features</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="attendance-tracking.html">Attendance Tracking</a></li>
+                <li><a href="payroll-processing.html">Payroll Processing</a></li>
+                <li><a href="performance-management.html">Performance Management</a></li>
+                <li><a href="leave-management.html">Leave Management</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="employee-management">
+            <h2>Employee Management</h2>
+            <form id="employeeForm">
+                <input type="text" name="name" placeholder="Employee Name" required aria-label="Employee Name">
+                <input type="text" name="contact_details" placeholder="Contact Details" required aria-label="Contact Details">
+                <input type="text" name="job_role" placeholder="Job Role" required aria-label="Job Role">
+                <input type="number" name="salary" placeholder="Salary" required aria-label="Salary">
+                <input type="file" name="document" accept=".pdf,.docx" required aria-label="Upload Document">
+                <button type="submit">Add Employee</button>
+            </form>
+            <div id="employeeList" class="employee-info"></div>
+        </section>
+    </main>
+</body>
+</html>
+
